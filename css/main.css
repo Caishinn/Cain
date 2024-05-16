@@ -1,0 +1,245 @@
+/* Google Font Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+  transition: all 0.6s ease-in-out;
+}
+
+:root {
+  --bg-color: #000000;
+  --text-color: #fff;
+  --main-color: #8c8c8c;
+  --other-color: #0f1151;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+body.dark {
+  --bg-color: #f7f7f7;
+  --text-color: #000000;
+  --main-color: #565656;
+  --other-color: #0f1151;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 100;
+  padding: 0px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  backdrop-filter: blur(50px);
+}
+/*
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 30px;
+}
+
+.nav-links a:hover {
+  color: var(--main-color);
+}
+*/
+i {
+  font-size: 28px;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  padding: 5px 5px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.h-right {
+  display: flex;
+  align-items: center;
+}
+
+.h-right a i {
+  margin-right: 30px;
+  color: var(--text-color);
+}
+
+.h-right a i:hover {
+  color: var(--text-color);
+  transform: scale(1.2);
+}
+.mode {
+  display: flex;
+  align-items: center;
+}
+
+.moon-sun {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.moon-sun:hover {
+  color: var(--text-color);
+  transform: scale(1.2);
+}
+.moon-sun :is(#moon, #sun) {
+  position: absolute;
+  color: var(--text-color);
+  transition: 0.2s ease-in-out;
+}
+#sun {
+  opacity: 0;
+}
+body.dark #sun {
+  opacity: 1;
+}
+body.dark #moon {
+  opacity: 0;
+}
+
+/*#menu-icon {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}*/
+
+section {
+  padding: 0 12%;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.home-img img {
+  width: 200px;
+  height: auto;
+  border-radius: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text span {
+  color: var(--text-color);
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+.home-text p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 30px;
+  margin: 24px auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.home-text i {
+  height: 40px;
+  width: 40px;
+  background: var(--main-color);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-right: 18px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+.main-btn {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.home-text i:hover {
+  background: #1547ab;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+.btn {
+  display: inline-block;
+  padding: 16px 24px;
+  color: #373737;
+  background: var(--main-color);
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  word-spacing: 5px;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--text-color);
+}
+
+.btn2 {
+  color: var(--main-color);
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  padding: 16px 24px;
+}
+
+.btn2:hover {
+  color: var(--text-color);
+}
